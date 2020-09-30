@@ -1,6 +1,7 @@
 .section1 {
   position: relative;
   height: 850px;
+  z-index: 1;
   .container {
     &__logo {
       display: flex;
@@ -63,6 +64,7 @@
     .bg__cont-elem {
       transform: skewY(-12deg);
       height: 100%;
+      overflow: hidden;
       .line {
         position: absolute;
         height: 70px;

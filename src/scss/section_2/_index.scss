@@ -1,0 +1,125 @@
+.section2{
+    position: relative;
+    background: #282E41;
+    padding-top: 110px;
+    @media (max-width:767px){
+        padding-top: 0;
+    }
+    .container{
+        .invite{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto 100px auto;
+            text-align: center;
+            max-width: 880px;
+            @media (max-width: 767px) {
+                margin: 0 auto;
+            }
+            &__title{
+                &:first-child{
+                    margin-bottom: 20px;
+                }
+                &:last-child{
+                    margin-top: 20px;
+                }
+                p{
+                    font-size: 22px;
+                    color: var(--color-grey);
+                    @media (max-width:767px){
+                        font-size: 18px;
+                    }
+                }
+            }
+            &__block-date-time{
+                p{
+                    color: var(--color-yellow);
+                    font-size:30px;
+                    @media (max-width:767px){
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        .title{
+            padding: 20px;
+            margin: 0 auto;
+            text-align: center;
+            h1{
+                color: var(--color-white);
+                font-size: 33px;
+                @media (max-width: 767px) {
+                    font-size: 20px;
+                }
+            }
+        }
+        .cont-person{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .person{
+                margin-top: 9%;
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                max-width: 550px;
+                text-align: center;
+                padding: 10px;
+                @media (max-width:915px) {
+                    width: 100%;
+                    max-width: 600px;
+                    margin-top: 3%;
+                    padding: 0;
+                }
+                .img{
+                    height: 200px;
+                    margin-bottom: 20px;
+                    svg{
+                        height: 100%;
+                    }
+                }
+                .maven-info{
+                    p{
+                        color: var(--color-white);
+                        font-size: 20px;
+                    }
+                }
+                .theme{
+                    margin-top: 3%;
+                    h2{
+                        display: inline-block;
+                        font-size: 22px;
+                        color: var(--color-black);
+                        @media (max-width:1170px) {
+                            font-size: 18px;
+                        }
+                        @media (max-width:480px) {
+                            font-size: 14px;
+                        }
+                        span{
+                            padding: 0 2px;
+                            background: var(--color-yellow);
+                            &:not(:last-child){
+                                margin-bottom: 4px;
+                                @media (max-width:915px) {
+                                    margin-bottom: 2px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .plot{
+                    margin-top: 3%;
+                    p{
+                        font-size: 16px;
+                        color: var(--color-grey);
+                        @media (max-width:480px) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
