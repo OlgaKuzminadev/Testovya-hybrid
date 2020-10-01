@@ -64,7 +64,9 @@
     .bg__cont-elem {
       transform: skewY(-12deg);
       height: 100%;
-      overflow: hidden;
+      @media (max-width: 767px) {
+        overflow: hidden;
+      }
       .line {
         position: absolute;
         height: 70px;

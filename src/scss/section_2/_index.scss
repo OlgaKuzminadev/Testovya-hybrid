@@ -76,6 +76,62 @@
                     margin-bottom: 20px;
                     svg{
                         height: 100%;
+                        .crown{
+                            animation: crown 3s linear infinite;
+                            @keyframes crown {
+                                50%{
+                                    transform: scale(1.1) translateX(-5%);
+                                }
+                                100%{
+                                    transform: scale(1) translateX(0%);
+                                }
+                            }
+                        }
+                        .cloak{
+                            animation: cloak-1 3s linear infinite;
+                            transform-origin: top right;
+                            @keyframes cloak-1 {
+                                50%{
+                                    transform: rotate(2deg);
+                                }
+                                100%{
+                                    transform: rotate(0);
+                                }
+                            }
+                        }
+                        .bow{
+                            animation: bow 5s linear infinite;
+                            transform-origin: 45% 15%;
+                            @keyframes bow {
+                                10%{
+                                    transform: rotate(10deg);
+                                }
+                                20%{
+                                    transform: rotate(-10deg);
+                                }
+                                30%{
+                                    transform: rotate(0);
+                                }
+                                100%{
+                                    transform: rotate(0);
+                                }
+                            }
+                        }
+                        .ears{
+                            animation: ears 6s linear infinite;
+                            transform-origin: top center;
+                            @keyframes ears {
+                                20%{
+                                    transform: skewX(-5deg);
+                                }
+                                40%{
+                                    transform: skewX(0deg);
+                                }
+                                100%{
+                                    transform: translateX(0);
+                                }
+                            }
+                        }
                     }
                 }
                 .maven-info{

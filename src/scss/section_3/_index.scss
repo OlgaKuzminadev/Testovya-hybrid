@@ -1,0 +1,108 @@
+.section3 {
+  position: relative;
+  padding: 170px 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  @media (max-width: 918px) {
+    padding: 30px 0;
+  }
+  .registration {
+    position: relative;
+    z-index: 1;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 90%;
+      left: 35px;
+      z-index: -1;
+      transform: translateY(-60%) translateX(-43%);
+      border-radius: 50%;
+      width: 150px;
+      height: 68px;
+      background-color: #dd0ed6;
+      filter: blur(27px);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      content: "";
+      position: absolute;
+      top: 90%;
+      right: 35px;
+      z-index: -1;
+      transform: translateY(-60%) translateX(46%);
+      border-radius: 50%;
+      width: 150px;
+      height: 90px;
+      background-color: #8F00FF;
+      filter: blur(35px);
+    }
+    a {
+      display: inline-block;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 18px;
+      color: var(--color-white);
+      background: #7e4dfe;
+      border-radius: 5px;
+      padding: 15px 40px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+  .bg {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    height: 120%;
+    width: 100%;
+    background: linear-gradient(to bottom, #282e41, rgba(76, 21, 160, 1));
+    z-index: -1;
+    overflow: hidden;
+    @media (max-width: 767px) {
+      width: 100%;
+      top: 0;
+    }
+    &__cont-elem {
+      transform: skewY(-12deg);
+      height: 100%;
+      .line {
+        position: absolute;
+        height: 70px;
+        z-index: -2;
+        @media (max-width: 918px) {
+          display: none;
+        }
+      }
+      .line-1 {
+        width: 33%;
+        border: 2px solid #dd0ed6;
+        left: -1%;
+        top: 18%;
+      }
+      .line-2 {
+        background-image: url(/dist/img/line-3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 35% 35%;
+        width: 23%;
+        right: -12%;
+        bottom: 40%;
+        overflow: hidden;
+      }
+      .line-3 {
+        background: var(--color-yellow);
+        width: 15%;
+        right: 11%;
+        bottom: 40%;
+      }
+      .line-4 {
+        background: var(--color-pink);
+        width: 15%;
+        right: 21%;
+        bottom: 55%;
+      }
+    }
+  }
+}
